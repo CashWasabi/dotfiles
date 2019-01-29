@@ -1,3 +1,3 @@
 {:user {:plugins [[lein-kibit "0.1.5"]]
-        :dependencies [[cljfmt "0.5.1"]]
+        :dependencies [[jonase/eastwood "0.2.1" :exclusions [org.clojure/clojure]]] 
         :repl-options {:init (require 'cljfmt.core)}}}

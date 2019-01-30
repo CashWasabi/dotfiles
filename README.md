@@ -6,5 +6,9 @@ Dependencies:
 - antigen
 - powerline zsh
 - vim dein plugin manager
+- tmux
+- tpm
+- leiningen
+- boot
 
 @TODO: write a little script that updates dotfiles automatically

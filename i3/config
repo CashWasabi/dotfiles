@@ -15,6 +15,9 @@ set $mod Mod4
 # is used in the bar {} block below.
 font pango:monospace 12
 
+# Disable header
+default_border pixel 1
+
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
@@ -178,6 +181,3 @@ bar {
 bindsym XF86AudioMute exec amixer sset 'Master' toggle
 bindsym XF86AudioLowerVolume exec amixer sset 'Master' 5%-
 bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+
-
-# Disable header
-default_border pixel 0

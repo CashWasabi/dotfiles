@@ -6,6 +6,8 @@
   [[default]]
     # gruvbox-dark
     font = "DejaVuSansMono Nerd Font Mono"
+    background_darkness = 0.97 #(or anything else between 0-1)
+    background_type = transparent
     show_titlebar = false
     background_color = "#282828"
     cursor_color = "#7c6f64"
@@ -14,6 +16,8 @@
 
   [[gruvbox-dark]]
     font = "DejaVuSansMono Nerd Font Mono"
+    background_darkness = 0.97 #(or anything else between 0-1)
+    background_type = transparent
     show_titlebar = false
     background_color = "#282828"
     cursor_color = "#7c6f64"
@@ -22,6 +26,8 @@
 
   [[gruvbox-light]]
     font = "DejaVuSansMono Nerd Font Mono"
+    background_darkness = 0.97 #(or anything else between 0-1)
+    background_type = transparent
     show_titlebar = false
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
     background_color = "#eee8d5"

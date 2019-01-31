@@ -180,4 +180,4 @@ bindsym XF86AudioLowerVolume exec amixer sset 'Master' 5%-
 bindsym XF86AudioRaiseVolume exec amixer sset 'Master' 5%+
 
 # Disable header
-exec i3-msg border pixel 1
+default_border pixel 0

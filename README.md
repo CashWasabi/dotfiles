@@ -1,5 +1,5 @@
 Dependencies:
-- urxvt terminal emulator
+- terminator
 - i3
 - zsh
 - oh-my-zsh

@@ -1,26 +1,40 @@
-install:
-- C:\Python36\python.exe -m pip install mypy
-- C:\Python36\python.exe -m pip install -e .[d]
+---
+# Disabling building for AppVeyor. We are just testing things.
+build: false
+clone_depth: 10
+# Use the directory C:\testplugin so test directories will mostly work.
+clone_folder: C:\testplugin
 
-# Not a C# project
-build: off
+# Cache the vim and vader directories between builds.
+cache:
+  - C:\vim -> .appveyor.yml
+  - C:\vader -> .appveyor.yml
+
+init:
+  # Stop git from changing newlines
+  - git config --global core.autocrlf input
+
+install:
+  # Download and unpack Vim
+  - ps: >-
+      if (!(Test-Path -Path C:\vim)){
+        Add-Type -A System.IO.Compression.FileSystem
+        Invoke-WebRequest ftp://ftp.vim.org/pub/vim/pc/vim80-586w32.zip `
+          -OutFile C:\vim.zip
+        [IO.Compression.ZipFile]::ExtractToDirectory('C:\vim.zip', 'C:\vim')
+        Invoke-WebRequest ftp://ftp.vim.org/pub/vim/pc/vim80-586rt.zip `
+          -OutFile C:\rt.zip
+        [IO.Compression.ZipFile]::ExtractToDirectory('C:\rt.zip', 'C:\vim')
+      }
+  # Clone Vader and check out the commit we want
+  - ps: >-
+      if (!(Test-Path -Path C:\vader)){
+        git clone https://github.com/junegunn/vader.vim C:\vader 2> $null
+        cd C:\vader
+        git checkout -qf c6243dd81c98350df4dec608fa972df98fa2a3af 2> $null
+      }
 
 test_script:
-- C:\Python36\python.exe tests/test_black.py
-- C:\Python36\python.exe -m mypy black.py blackd.py tests/test_black.py
-
-after_test:
-  - C:\Python36\python.exe -m pip install pyinstaller
-  - "%CMD_IN_ENV% C:\\Python36\\python.exe -m PyInstaller --clean -F --add-data blib2to3/;blib2to3 black.py"
-
-artifacts:
-  - path: dist/black.exe
-
-deploy:
-  provider: GitHub
-  description: ''
-  auth_token:
-    secure: caPP8BcGffPuTopDfdI4ZVKZkpD9l9UAcjO7rwm5/fFSMbsqh1v4S38nmMn4uSuD
-  on:
-    appveyor_repo_tag: true
-
+  - cd C:\testplugin
+  - 'C:\vim\vim\vim80\vim.exe -u test\vimrc "+Vader!
+    test/*.vader test/*/*.vader test/*/*/*.vader test/*/*/*.vader"'

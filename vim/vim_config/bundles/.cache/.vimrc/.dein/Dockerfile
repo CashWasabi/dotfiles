@@ -1,19 +1,20 @@
-ARG PYTHON_IMAGE
+FROM tweekmonster/vim-testbed:latest
 
-FROM python:${PYTHON_IMAGE}
+RUN install_vim -tag v8.0.0027 -build \
+                -tag v8.1.0204 -build \
+                -tag neovim:v0.2.0 -build \
+                -tag neovim:v0.3.0 -build
 
-ARG VIM_VERSION
+ENV PACKAGES="\
+    bash \
+    git \
+    python \
+    py-pip \
+"
+RUN apk --update add $PACKAGES && \
+    rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
 
-COPY docker/install_packages.sh src/scripts/
-RUN src/scripts/install_packages.sh
-COPY docker/download_vim.sh src/scripts/
-RUN src/scripts/download_vim.sh
-COPY docker/build_vim.sh src/scripts/
-RUN src/scripts/build_vim.sh
+RUN pip install vim-vint==0.3.15
 
-RUN pip install unidecode
-
-COPY . /src/UltiSnips
-WORKDIR /src/UltiSnips
-
-RUN ./test_all.py --clone-plugins
+RUN git clone https://github.com/junegunn/vader.vim vader && \
+    cd vader && git checkout c6243dd81c98350df4dec608fa972df98fa2a3af

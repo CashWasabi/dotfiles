@@ -1,4 +1,16 @@
 " Python specific configurations
+
+" file specific tabs and spaces for python pep8
+setlocal expandtab 
+setlocal autoindent 
+setlocal tabstop=4 
+setlocal shiftwidth=4 
+setlocal softtabstop=4 
+setlocal textwidth=87 
+setlocal colorcolumn=88 
+setlocal fileformat=unix 
+
+
 "
 " for flake8:
 " --max-line-length=88 --max-complexity=10

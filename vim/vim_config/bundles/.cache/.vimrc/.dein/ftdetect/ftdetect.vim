@@ -8,3 +8,5 @@ autocmd BufNewFile,BufRead *.jsonl setlocal filetype=json
 autocmd BufNewFile,BufRead *.jsonp setlocal filetype=json
 autocmd BufNewFile,BufRead *.geojson setlocal filetype=json
 autocmd BufNewFile,BufRead *.template setlocal filetype=json
+autocmd BufNewFile,BufRead *.org setfiletype org
+"autocmd BufNewFile,BufReadPost org:todo* setfiletype orgtodo

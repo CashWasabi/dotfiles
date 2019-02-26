@@ -63,9 +63,6 @@ if dein#load_state('~/.vim/bundles')
 	call dein#add('SirVer/ultisnips')
 	call dein#add('honza/vim-snippets')
 
-	" wiki hosted from vim
-	call dein#add('vimwiki/vimwiki')
-
 	" Colors
 	call dein#add('rakr/vim-togglebg') " plugin to change color on key call
 	call dein#add('morhetz/gruvbox')
@@ -114,9 +111,14 @@ if dein#load_state('~/.vim/bundles')
 	call dein#add('suan/vim-instant-markdown')
 	call dein#add('nelstrom/vim-markdown-preview')
 
+  " inspiration from here: https://bofh.org.uk/2019/02/25/baking-with-emacs/
   " org-mode for interactive planning
   call dein#add('jceb/vim-orgmode')
-	" end custom plugins
+  " another awesome plugin for handling ledger data
+  call dein#add('ledger/vim-ledger')
+
+	" wiki hosted from vim
+	call dein#add('vimwiki/vimwiki')
 
 	call dein#end()
 	call dein#save_state()

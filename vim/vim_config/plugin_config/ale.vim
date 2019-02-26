@@ -1,6 +1,9 @@
 " NOTE: Ale can also support go to definitions. Try to look if it conflicts with
 " Clojure (vim-fireplace) and Python (jedi-vim)
 
+" Only run linters named in ale_linters settings.
+" let g:ale_linters_explicit = 1
+
 " make sure that deoplete is used for completion
 let g:ale_completion_enabled = 0
 

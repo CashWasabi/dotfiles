@@ -114,7 +114,8 @@ if dein#load_state('~/.vim/bundles')
 	call dein#add('suan/vim-instant-markdown')
 	call dein#add('nelstrom/vim-markdown-preview')
 
-
+  " org-mode for interactive planning
+  call dein#add('jceb/vim-orgmode')
 	" end custom plugins
 
 	call dein#end()

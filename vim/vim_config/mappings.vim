@@ -1,3 +1,5 @@
+source $HOME/git/dotfiles/vim/vim_config/features/close_inactive_buffers.vim
+
 let mapleader = ","
 
 "split navigations
@@ -22,6 +24,9 @@ nnoremap <Backspace> :bp\|bd \#<Enter>
 
 " Close split but keep buffer
 nnoremap <leader><Backspace> <C-w>q<Enter>
+
+" Close all inactive buffers
+nnoremap <leader>ea :call DeleteInactiveBufs()<CR>
 
 " copy with yank command in visual mode
 nnoremap <C-c> "+y

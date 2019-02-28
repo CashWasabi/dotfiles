@@ -18,8 +18,9 @@ autocmd BufWritePre * %s/\s\+$//e
 " set encoding to utf-8
 set encoding=utf-8
 
-" enable line numbering
-set nu
+" turn hybrid line numbers on
+set number relativenumber
+set nu rnu
 
 " that airlines statusbar is automatically called
 set laststatus=2

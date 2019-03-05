@@ -77,22 +77,12 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-" Grammar checker call
-Plug 'rhysd/vim-grammarous'
-
 " test dispatcher
 Plug 'tpope/vim-dispatch'
 
-" costum stuff
-Plug 'jiangmiao/auto-pairs'
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
-Plug 'simeji/winresizer'
-
-"""" LANGUAGE SPECIFIC PLUGINS
-
-" CLOJURE
 Plug 'tpope/vim-classpath', { 'for': 'clojure' }
+Plug 'tpope/repeat.git', { 'for': 'clojure' }
+Plug 'tpope/vim-surround.git', { 'for': 'clojure' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-salve', { 'for': 'clojure' }
 Plug 'junegunn/rainbow_parentheses.vim', { 'for': 'clojure' }
@@ -101,18 +91,23 @@ Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'venantius/vim-eastwood', { 'for': 'clojure' }
 Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
 
-"" PYTHON
-Plug 'plytophogy/vim-virtualenv'
-Plug 'PieterjanMontens/vim-pipenv'
-
-" python motions for better navigation
-Plug 'jeetsukumaran/vim-pythonsense'
+Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
+Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
+Plug 'jeetsukumaran/vim-pythonsense', {'for': 'python'}
 
 "html/markdown
 Plug 'mattn/emmet-vim'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'suan/vim-instant-markdown'
 Plug 'nelstrom/vim-markdown-preview'
+
+" Grammar checker call
+Plug 'rhysd/vim-grammarous'
+
+" costum stuff
+Plug 'jiangmiao/auto-pairs'
+Plug 'easymotion/vim-easymotion'
+Plug 'simeji/winresizer'
 
 " inspiration from here: https://bofh.org.uk/2019/02/25/baking-with-emacs/
 " org-mode for interactive planning

@@ -1,2 +1,3 @@
-vim/vim_config/bundles
+vim/vim_config/plugged
 vim/vim_config/black
+vim/vim_config/autoload

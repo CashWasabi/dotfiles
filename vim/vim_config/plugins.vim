@@ -1,132 +1,123 @@
-filetype off                  " required
-
-" Add the dein installation directory into runtimepath
-
-set runtimepath +=~/.vim/bundles/repos/github.com/Shougo/dein.vim
-
-if dein#load_state('~/.vim/bundles')
-	call dein#begin('~/.vim/bundles')
-
-	" mandatory plugins
-	call dein#add('~/.vim/bundles/repos/github.com/Shougo/dein.vim')
-
-	" dependencies for deoplete if in vim8
-	" There is an issue with the dependencies which is resolved here:
-	" https://github.com/roxma/vim-hug-neovim-rpc/issues/28
-	" current fix: install python-greenlet with pacman and install neovim
-	" in system python
-	call dein#add('roxma/nvim-yarp')
-	call dein#add('roxma/vim-hug-neovim-rpc')
-
-	" autocompletion (better than YouCompleteMe)
-	call dein#add('Shougo/deoplete.nvim')
-
-	" linter
-	call dein#add('w0rp/ale')
-
-
-	" file browsing
-	call dein#add('scrooloose/nerdtree')
-	call dein#add('jistr/vim-nerdtree-tabs')
-	call dein#add('Xuyuanp/nerdtree-git-plugin')
-
-	" git integration
-	call dein#add('rickhowe/diffchar.vim')
-	call dein#add('tpope/vim-fugitive')
-	call dein#add('airblade/vim-gitgutter')
-
-	" code folding
-	call dein#add('tmhedberg/SimpylFold')
-
-	" comment out stuff
-	call dein#add('scrooloose/nerdcommenter')
-
-	" searching for everything
-	call dein#add('kien/ctrlp.vim')
-
-	" support for navigation between tmux windows and vim windows
-	call dein#add('christoomey/vim-tmux-navigator')
-
-	" send text to repls like clojure or python
-	call dein#add('jpalardy/vim-slime')
-
-	" json helper for vim
-	call dein#add('elzr/vim-json')
-
-	" sonic pi interface
-	call dein#add('dermusikman/sonicpi.vim')
-
-	" glsl preview
-	call dein#add('patriciogonzalezvivo/vim-glslViewer')
-
-	" snippets
-	call dein#add('SirVer/ultisnips')
-	call dein#add('honza/vim-snippets')
-
-	" Colors
-	call dein#add('rakr/vim-togglebg') " plugin to change color on key call
-	call dein#add('morhetz/gruvbox')
-
-	" status bar
-	" to setup gruvbox theme follow these instructions:
-	" mkdir --parents ~/.vim/colors
-	" ln -s ~/.vim/bundles/repos/github.com/morhetz/gruvbox/colors ~/.vim/colors/gruvbox.vim
-	call dein#add('vim-airline/vim-airline')
-	call dein#add('vim-airline/vim-airline-themes')
-
-	" Grammar checker call
-	call dein#add('rhysd/vim-grammarous')
-
-	" test dispatcher
-	call dein#add('tpope/vim-dispatch')
-
-	" costum stuff
-	call dein#add('jiangmiao/auto-pairs')
-	call dein#add('easymotion/vim-easymotion')
-	call dein#add('tpope/vim-surround')
-	call dein#add('simeji/winresizer')
-
-	"""" LANGUAGE SPECIFIC PLUGINS
-
-	" CLOJURE
-	call dein#add('tpope/vim-classpath')
-	call dein#add('tpope/vim-fireplace')
-	call dein#add('tpope/vim-salve')
-	call dein#add('junegunn/rainbow_parentheses.vim')
-	call dein#add('guns/vim-sexp')
-	call dein#add('tpope/vim-sexp-mappings-for-regular-people')
-	call dein#add('venantius/vim-eastwood')
-	call dein#add('venantius/vim-cljfmt')
-
-	"" PYTHON
-	call dein#add('plytophogy/vim-virtualenv')
-	call dein#add('PieterjanMontens/vim-pipenv')
-
-	" python motions for better navigation
-	call dein#add('jeetsukumaran/vim-pythonsense')
-
-	"html/markdown
-	call dein#add('mattn/emmet-vim')
-	call dein#add('jtratner/vim-flavored-markdown')
-	call dein#add('suan/vim-instant-markdown')
-	call dein#add('nelstrom/vim-markdown-preview')
-
-  " inspiration from here: https://bofh.org.uk/2019/02/25/baking-with-emacs/
-  " org-mode for interactive planning
-  call dein#add('jceb/vim-orgmode')
-  " another awesome plugin for handling ledger data
-  call dein#add('ledger/vim-ledger')
-
-	" wiki hosted from vim
-	call dein#add('vimwiki/vimwiki')
-
-	call dein#end()
-	call dein#save_state()
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-filetype plugin indent on
+" Specify a directory for plugins
+" - For Neovim: ~/.local/share/nvim/plugged
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.vim/plugged')
 
-" If you want to install not installed plugins on startup.
-if dein#check_install()
-  call dein#install()
-endif
+" Make sure you use single quotes
+" dependencies for deoplete if in vim8
+" There is an issue with the dependencies which is resolved here:
+" https://github.com/roxma/vim-hug-neovim-rpc/issues/28
+" current fix: install python-greenlet with pacman and install neovim
+" in system python
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
+" autocompletion (better than YouCompleteMe
+Plug 'Shougo/deoplete.nvim'
+
+" linter
+Plug 'w0rp/ale'
+
+" file browsing
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" git integration
+Plug 'rickhowe/diffchar.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+" code folding
+Plug 'tmhedberg/SimpylFold'
+
+" comment out stuff
+Plug 'scrooloose/nerdcommenter'
+
+" searching for everything
+Plug 'kien/ctrlp.vim'
+
+" support for navigation between tmux windows and vim windows
+Plug 'christoomey/vim-tmux-navigator'
+
+" send text to repls like clojure or python
+Plug 'jpalardy/vim-slime'
+
+" json helper for vim
+Plug 'elzr/vim-json'
+
+" sonic pi interface
+Plug 'dermusikman/sonicpi.vim'
+
+" glsl preview
+Plug 'patriciogonzalezvivo/vim-glslViewer'
+
+" snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+" Colors
+Plug 'rakr/vim-togglebg' " plugin to change color on key call
+Plug 'morhetz/gruvbox'
+
+" status bar
+" to setup gruvbox theme follow these instructions:
+" mkdir --parents ~/.vim/colors
+" ln -s ~/.vim/bundles/repos/github.com/morhetz/gruvbox/colors ~/.vim/colors/gruvbox.vim
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" Grammar checker call
+Plug 'rhysd/vim-grammarous'
+
+" test dispatcher
+Plug 'tpope/vim-dispatch'
+
+" costum stuff
+Plug 'jiangmiao/auto-pairs'
+Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-surround'
+Plug 'simeji/winresizer'
+
+"""" LANGUAGE SPECIFIC PLUGINS
+
+" CLOJURE
+Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-fireplace'
+Plug 'tpope/vim-salve'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'venantius/vim-eastwood'
+Plug 'venantius/vim-cljfmt'
+
+"" PYTHON
+Plug 'plytophogy/vim-virtualenv'
+Plug 'PieterjanMontens/vim-pipenv'
+
+" python motions for better navigation
+Plug 'jeetsukumaran/vim-pythonsense'
+
+"html/markdown
+Plug 'mattn/emmet-vim'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'suan/vim-instant-markdown'
+Plug 'nelstrom/vim-markdown-preview'
+
+" inspiration from here: https://bofh.org.uk/2019/02/25/baking-with-emacs/
+" org-mode for interactive planning
+Plug 'jceb/vim-orgmode'
+" another awesome plugin for handling ledger data
+Plug 'ledger/vim-ledger'
+
+" wiki hosted from vim
+Plug 'vimwiki/vimwiki'
+
+" Initialize plugin system
+call plug#end()

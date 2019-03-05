@@ -41,7 +41,11 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'scrooloose/nerdcommenter'
 
 " searching for everything
-Plug 'kien/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+" the silver searcher
+Plug 'gabesoft/vim-ags'
 
 " support for navigation between tmux windows and vim windows
 Plug 'christoomey/vim-tmux-navigator'
@@ -88,14 +92,14 @@ Plug 'simeji/winresizer'
 """" LANGUAGE SPECIFIC PLUGINS
 
 " CLOJURE
-Plug 'tpope/vim-classpath'
-Plug 'tpope/vim-fireplace'
-Plug 'tpope/vim-salve'
-Plug 'junegunn/rainbow_parentheses.vim'
-Plug 'guns/vim-sexp'
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'venantius/vim-eastwood'
-Plug 'venantius/vim-cljfmt'
+Plug 'tpope/vim-classpath', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+Plug 'tpope/vim-salve', { 'for': 'clojure' }
+Plug 'junegunn/rainbow_parentheses.vim', { 'for': 'clojure' }
+Plug 'guns/vim-sexp', { 'for': 'clojure' }
+Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
+Plug 'venantius/vim-eastwood', { 'for': 'clojure' }
+Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
 
 "" PYTHON
 Plug 'plytophogy/vim-virtualenv'

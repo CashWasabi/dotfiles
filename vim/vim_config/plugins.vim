@@ -82,7 +82,7 @@ Plug 'tpope/vim-dispatch'
 
 Plug 'tpope/vim-classpath', { 'for': 'clojure' }
 Plug 'tpope/repeat.git', { 'for': 'clojure' }
-Plug 'tpope/vim-surround.git', { 'for': 'clojure' }
+Plug 'tpope/vim-surround', { 'for': 'clojure' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'tpope/vim-salve', { 'for': 'clojure' }
 Plug 'junegunn/rainbow_parentheses.vim', { 'for': 'clojure' }
@@ -108,6 +108,7 @@ Plug 'rhysd/vim-grammarous'
 " costum stuff
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
+Plug 'wesQ3/vim-windowswap'
 
 " inspiration from here: https://bofh.org.uk/2019/02/25/baking-with-emacs/
 " org-mode for interactive planning
@@ -116,7 +117,7 @@ Plug 'jceb/vim-orgmode'
 Plug 'ledger/vim-ledger'
 
 " wiki hosted from vim
-Plug 'vimwiki/vimwiki'
+"Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 call plug#end()

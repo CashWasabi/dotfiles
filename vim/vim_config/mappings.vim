@@ -15,6 +15,12 @@ nnoremap <silent> <Space>l 5<C-W>>
 nnoremap <silent> <Space>j 5<C-W>+
 nnoremap <silent> <Space>k 5<C-W>-
 
+" disable arrow keys
+noremap <Up> <nop>
+noremap <Down> <nop>
+noremap <Left> <nop>
+noremap <Right> <nop>
+
 " open nerdtree on toggle
 nnoremap <C-n> :NERDTreeToggle<CR>
 
@@ -36,3 +42,10 @@ nnoremap <leader>ea :call DeleteInactiveBufs()<CR>
 
 " copy with yank command in visual mode
 nnoremap <C-c> "+y
+
+" Reload .vimrc & install plugins
+nnoremap <leader>+ :so ~/.vimrc<Enter>
+nnoremap <leader>p :PlugInstall<Enter>
+
+" use jj as alternative to escape
+inoremap jj <Esc>

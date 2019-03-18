@@ -9,6 +9,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" resize configs
+nnoremap <silent> <Space>h 5<C-W><
+nnoremap <silent> <Space>l 5<C-W>>
+nnoremap <silent> <Space>j 5<C-W>+
+nnoremap <silent> <Space>k 5<C-W>-
+
 " open nerdtree on toggle
 nnoremap <C-n> :NERDTreeToggle<CR>
 

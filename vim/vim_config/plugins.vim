@@ -90,6 +90,7 @@ Plug 'guns/vim-sexp', { 'for': 'clojure' }
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'clojure' }
 Plug 'venantius/vim-eastwood', { 'for': 'clojure' }
 Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
+Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 
 Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
 Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
@@ -107,7 +108,6 @@ Plug 'rhysd/vim-grammarous'
 " costum stuff
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'simeji/winresizer'
 
 " inspiration from here: https://bofh.org.uk/2019/02/25/baking-with-emacs/
 " org-mode for interactive planning

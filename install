@@ -5,6 +5,7 @@ ln -s $DOTFILES/profile/profile.config ~/.profile
 ln -s $DOTFILES/bash/bashrc.config ~/.bashrc
 ln -s $DOTFILES/zsh/zshrc.config ~/.zshrc
 ln -s $DOTFILES/terminator ~/.config/terminator
+ln -s $DOTFILES/redshift ~/.config/redshift
 ln -s $DOTFILES/i3 ~/.i3
 ln -s $DOTFILES/lein ~/.lein
 ln -s $DOTFILES/xresources/xresources.config ~/.Xresources

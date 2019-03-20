@@ -62,6 +62,9 @@ Plug 'dermusikman/sonicpi.vim'
 " glsl preview
 Plug 'patriciogonzalezvivo/vim-glslViewer'
 
+" multiple cursors
+Plug 'terryma/vim-multiple-cursors'
+
 " snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'

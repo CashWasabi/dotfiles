@@ -21,7 +21,7 @@ setlocal fileformat=unix
 let b:ale_linters = ['flake8', 'pylint', 'mypy']
 
 " Fix Python files with autopep8 and yapf.
-let b:ale_fixers = ['black']
+let b:ale_fixers = ['black', 'autopep8', 'isort']
 
 " Disable warnings about trailing whitespace for Python files.
 let b:ale_warn_about_trailing_whitespace = 0

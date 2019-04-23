@@ -63,7 +63,7 @@ Plug 'dermusikman/sonicpi.vim'
 Plug 'patriciogonzalezvivo/vim-glslViewer'
 
 " multiple cursors
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
 
 " snippets
 Plug 'SirVer/ultisnips'
@@ -83,6 +83,7 @@ Plug 'vim-airline/vim-airline-themes'
 " test dispatcher
 Plug 'tpope/vim-dispatch'
 
+" clojure specific
 Plug 'tpope/vim-classpath', { 'for': 'clojure' }
 Plug 'tpope/repeat.git', { 'for': 'clojure' }
 Plug 'tpope/vim-surround', { 'for': 'clojure' }
@@ -95,6 +96,7 @@ Plug 'venantius/vim-eastwood', { 'for': 'clojure' }
 Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
 Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 
+" python specific
 Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
 Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
 Plug 'jeetsukumaran/vim-pythonsense', {'for': 'python'}

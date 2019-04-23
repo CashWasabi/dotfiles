@@ -1,16 +1,19 @@
 #!/bin/sh
-DOTFILES='~/git/dotfiles/'
+DOTFILES=~/git/dotfiles/
 
-ln -s '$DOTFILES/profile/profile.config ~/.profile'
-ln -s '$DOTFILES/bash/bashrc.config ~/.bashrc'
-ln -s '$DOTFILES/zsh/zshrc.config ~/.zshrc'
-ln -s '$DOTFILES/terminator ~/.config/terminator'
-ln -s '$DOTFILES/i3 ~/.i3'
-ln -s '$DOTFILES/lein ~/.lein'
-ln -s '$DOTFILES/xresources/xresources.config ~/.Xresources'
-ln -s '$DOTFILES/xresources/xinitrc.config ~/.xinitrc'
-ln -s '$DOTFILES/xresources/xclients.config ~/.Xclients'
-ln -s '$DOTFILES/vim/vimrc.config ~/.vimrc'
-ln -s '$DOTFILES/vim/vim_config ~/.vim'
-ln -s '$DOTFILES/tmux/tmux.config ~/.tmux.conf'
-ln -s '$DOTFILES/tmux/tmux_config ~/.tmux'
+ln -s $DOTFILES/profile/profile.config ~/.profile
+ln -s $DOTFILES/bash/bashrc.config ~/.bashrc
+ln -s $DOTFILES/zsh/zshrc.config ~/.zshrc
+ln -s $DOTFILES/terminator ~/.config/terminator
+ln -s $DOTFILES/redshift ~/.config/redshift
+ln -s $DOTFILES/i3 ~/.i3
+ln -s $DOTFILES/lein ~/.lein
+ln -s $DOTFILES/xresources/xresources.config ~/.Xresources
+ln -s $DOTFILES/xresources/xinitrc.config ~/.xinitrc
+ln -s $DOTFILES/xresources/xclients.config ~/.Xclients
+ln -s $DOTFILES/vim/vimrc.config ~/.vimrc
+ln -s $DOTFILES/vim/vim_config ~/.vim
+ln -s $DOTFILES/tmux/tmux.config ~/.tmux.conf
+ln -s $DOTFILES/tmux/tmux_config ~/.tmux
+cat $DOTFILES/git/git.config >> ~/.gitconfig
+

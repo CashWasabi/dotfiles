@@ -1,5 +1,5 @@
 " NOTE: Ale can also support go to definitions. Try to look if it conflicts with
-" Clojure (vim-fireplace) and Python (jedi-vim)
+" Clojure (vim-fireplace)
 
 " Only run linters named in ale_linters settings.
 " let g:ale_linters_explicit = 1

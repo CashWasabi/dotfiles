@@ -18,8 +18,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 
-" autocompletion (better than YouCompleteMe
+" autocompletion
 Plug 'Shougo/deoplete.nvim'
+Plug 'deoplete-plugins/deoplete-jedi'
 
 " linter
 Plug 'w0rp/ale'
@@ -100,6 +101,7 @@ Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
 Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
 Plug 'jeetsukumaran/vim-pythonsense', {'for': 'python'}
+Plug 'davidhalter/jedi-vim', {'for': 'python'}
 
 "html/markdown
 Plug 'mattn/emmet-vim'

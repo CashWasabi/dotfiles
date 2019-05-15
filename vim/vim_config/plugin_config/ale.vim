@@ -1,9 +1,6 @@
 " Only run linters named in ale_linters settings.
 " let g:ale_linters_explicit = 1
 
-" make sure that deoplete is used for completion
-let g:ale_completion_enabled = 0
-
 " options for texts shown for signs
 let g:ale_sign_error = '>>'
 let g:ale_sign_warning = '--'

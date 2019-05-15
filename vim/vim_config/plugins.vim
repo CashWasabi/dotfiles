@@ -9,19 +9,6 @@ endif
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" Make sure you use single quotes
-" dependencies for deoplete if in vim8
-" There is an issue with the dependencies which is resolved here:
-" https://github.com/roxma/vim-hug-neovim-rpc/issues/28
-" current fix: install python-greenlet with pacman and install neovim
-" in system python
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-
-" autocompletion
-Plug 'Shougo/deoplete.nvim'
-Plug 'deoplete-plugins/deoplete-jedi'
-
 " linter
 Plug 'w0rp/ale'
 
@@ -67,7 +54,7 @@ Plug 'patriciogonzalezvivo/vim-glslViewer'
 "Plug 'terryma/vim-multiple-cursors'
 
 " snippets
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 " Colors

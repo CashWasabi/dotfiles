@@ -88,7 +88,10 @@ Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
 Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
 Plug 'jeetsukumaran/vim-pythonsense', {'for': 'python'}
-Plug 'davidhalter/jedi-vim', {'for': 'python'}
+"" Dependencies for vim-lsp-python
+Plug 'prabirshrestha/async.vim', {'for': 'python'}
+Plug 'prabirshrestha/vim-lsp', {'for': 'python'}
+Plug 'ryanolsonx/vim-lsp-python', {'for': 'python'}
 
 "html/markdown
 Plug 'mattn/emmet-vim'

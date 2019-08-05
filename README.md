@@ -1,5 +1,5 @@
 Dependencies:
-- terminator
+- kitty
 - i3
 - zsh
 - oh-my-zsh

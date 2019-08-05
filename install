@@ -14,5 +14,6 @@ ln -s $DOTFILES/vim/vimrc.config ~/.vimrc
 ln -s $DOTFILES/vim/vim_config ~/.vim
 ln -s $DOTFILES/tmux/tmux.config ~/.tmux.conf
 ln -s $DOTFILES/tmux/tmux_config ~/.tmux
+ln -s $DOTFILES/kitty/kitty ~/.config/kitty
 cat $DOTFILES/git/git.config >> ~/.gitconfig
 

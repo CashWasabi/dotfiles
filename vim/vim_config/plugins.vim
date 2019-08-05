@@ -22,40 +22,25 @@ Plug 'rickhowe/diffchar.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" code folding
-Plug 'tmhedberg/SimpylFold'
-
 " comment out stuff
 Plug 'scrooloose/nerdcommenter'
 
 " searching for everything
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
 " the silver searcher
 Plug 'gabesoft/vim-ags'
 
-" support for navigation between tmux windows and vim windows
-Plug 'christoomey/vim-tmux-navigator'
-
-" send text to repls like clojure or python
-Plug 'jpalardy/vim-slime'
-
 " json helper for vim
 Plug 'elzr/vim-json'
-
-" sonic pi interface
-Plug 'dermusikman/sonicpi.vim'
-
-" glsl preview
-Plug 'patriciogonzalezvivo/vim-glslViewer'
 
 " multiple cursors
 "Plug 'terryma/vim-multiple-cursors'
 
 " snippets
 "Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+"Plug 'honza/vim-snippets'
 
 " Colors
 Plug 'rakr/vim-togglebg' " plugin to change color on key call
@@ -85,9 +70,11 @@ Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
 Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 
 " python specific
+Plug 'tmhedberg/SimpylFold'
 Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
 Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
-Plug 'jeetsukumaran/vim-pythonsense', {'for': 'python'}
+"Plug 'jeetsukumaran/vim-pythonsense', {'for': 'python'}
+
 "" Dependencies for vim-lsp-python
 Plug 'prabirshrestha/async.vim', {'for': 'python'}
 Plug 'prabirshrestha/vim-lsp', {'for': 'python'}
@@ -106,12 +93,6 @@ Plug 'rhysd/vim-grammarous'
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 Plug 'wesQ3/vim-windowswap'
-
-" inspiration from here: https://bofh.org.uk/2019/02/25/baking-with-emacs/
-" org-mode for interactive planning
-Plug 'jceb/vim-orgmode'
-" another awesome plugin for handling ledger data
-Plug 'ledger/vim-ledger'
 
 " wiki hosted from vim
 "Plug 'vimwiki/vimwiki'

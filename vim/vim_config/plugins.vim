@@ -73,7 +73,6 @@ Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 Plug 'tmhedberg/SimpylFold'
 Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
 Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
-"Plug 'jeetsukumaran/vim-pythonsense', {'for': 'python'}
 
 "" Dependencies for vim-lsp-python
 Plug 'prabirshrestha/async.vim', {'for': 'python'}
@@ -86,16 +85,10 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'suan/vim-instant-markdown'
 Plug 'nelstrom/vim-markdown-preview'
 
-" Grammar checker call
-Plug 'rhysd/vim-grammarous'
-
 " costum stuff
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
 Plug 'wesQ3/vim-windowswap'
-
-" wiki hosted from vim
-"Plug 'vimwiki/vimwiki'
 
 " Initialize plugin system
 call plug#end()

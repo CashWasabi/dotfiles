@@ -32,7 +32,7 @@ nnoremap <S-Tab> :bprevious<CR>
 nnoremap <leader>bb :buffers<Enter>
 
 " Close buffer but keep split
-nnoremap <Backspace> :bp\|bd \#<Enter>
+nnoremap <Backspace> :bp\|bd #<Enter>
 
 " Close split but keep buffer
 nnoremap <leader><Backspace> <C-w>q<Enter>

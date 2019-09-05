@@ -8,3 +8,4 @@ source $HOME/git/dotfiles/vim/vim_config/plugin_config/rainbowparentheses.vim
 source $HOME/git/dotfiles/vim/vim_config/plugin_config/simplyfold.vim
 source $HOME/git/dotfiles/vim/vim_config/plugin_config/utilsnips.vim
 source $HOME/git/dotfiles/vim/vim_config/plugin_config/fzf.vim
+source $HOME/git/dotfiles/vim/vim_config/plugin_config/multiplecursors.vim

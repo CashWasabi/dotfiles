@@ -29,18 +29,15 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 
-" the silver searcher
-Plug 'gabesoft/vim-ags'
-
 " json helper for vim
 Plug 'elzr/vim-json'
 
 " multiple cursors
-"Plug 'terryma/vim-multiple-cursors'
+" Plug 'terryma/vim-multiple-cursors'
 
 " snippets
-"Plug 'SirVer/ultisnips'
-"Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
 
 " Colors
 Plug 'rakr/vim-togglebg' " plugin to change color on key call

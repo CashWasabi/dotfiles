@@ -49,3 +49,17 @@ nnoremap <leader>p :PlugInstall<Enter>
 
 " use jj as alternative to escape
 inoremap jj <Esc>
+
+" reminders for navigation
+" zz - move current line to middle of screen
+" zt - move current line to top of screen
+" zb - move current line to bottm of screen
+" <C-y> move screen up one line
+" <C-e> move screen down one line
+" <C-u> move screen and cursor up 1/2 page
+" <C-b> move screen up one page, cursor to last line
+" <C-t> move screen down one page, cursor to first line
+"
+" if nercommenter is enabled
+" zR - unwrap all wrapped lines
+" @TODO: add other wrap reminders

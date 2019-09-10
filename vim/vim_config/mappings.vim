@@ -63,3 +63,12 @@ inoremap jj <Esc>
 " if nercommenter is enabled
 " zR - unwrap all wrapped lines
 " @TODO: add other wrap reminders
+"
+" jedi-vim (also with python-language-server)
+" shift+k - doc string
+" <C-Space> - completion
+" <leader>g - goto function
+" <leader>d - goto definition
+" <leader>r - renaming
+" <leader>n - show usage of name
+" Open module, e.g. :Pyimport os (opens the os module)

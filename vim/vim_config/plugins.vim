@@ -67,14 +67,15 @@ Plug 'venantius/vim-cljfmt', { 'for': 'clojure' }
 Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 
 " python specific
-Plug 'tmhedberg/SimpylFold'
-Plug 'plytophogy/vim-virtualenv', {'for': 'python'}
-Plug 'PieterjanMontens/vim-pipenv', {'for': 'python'}
+Plug 'tmhedberg/SimpylFold', { 'for': 'python' }
+Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+Plug 'plytophogy/vim-virtualenv', { 'for': 'python' }
+Plug 'PieterjanMontens/vim-pipenv', { 'for': 'python' }
 
-"" Dependencies for vim-lsp-python
-Plug 'prabirshrestha/async.vim', {'for': 'python'}
-Plug 'prabirshrestha/vim-lsp', {'for': 'python'}
-Plug 'ryanolsonx/vim-lsp-python', {'for': 'python'}
+" Dependencies for vim-lsp-python
+Plug 'prabirshrestha/async.vim', { 'for': 'python' }
+Plug 'prabirshrestha/vim-lsp', { 'for': 'python' }
+Plug 'ryanolsonx/vim-lsp-python', { 'for': 'python' }
 
 "html/markdown
 Plug 'mattn/emmet-vim'

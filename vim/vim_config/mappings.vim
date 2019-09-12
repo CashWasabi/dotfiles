@@ -50,7 +50,7 @@ nnoremap <leader>p :PlugInstall<Enter>
 " use jj as alternative to escape
 inoremap jj <Esc>
 
-" reminders for navigation
+" CHEATSHEET:
 " zz - move current line to middle of screen
 " zt - move current line to top of screen
 " zb - move current line to bottm of screen
@@ -62,8 +62,9 @@ inoremap jj <Esc>
 "
 " if nercommenter is enabled
 " zR - unwrap all wrapped lines
-" @TODO: add other wrap reminders
+" @TODO: add other wrap commands
 "
+" PYHTON SPECIFIC:
 " jedi-vim (also with python-language-server)
 " shift+k - doc string
 " <C-Space> - completion
@@ -72,3 +73,9 @@ inoremap jj <Esc>
 " <leader>r - renaming
 " <leader>n - show usage of name
 " Open module, e.g. :Pyimport os (opens the os module)
+"
+" CLOJURE SPECIFIC:
+" @TODO
+"
+" @TODO: add other mappings like ag too
+"

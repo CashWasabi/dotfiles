@@ -10,5 +10,5 @@ Dependencies:
 - tpm
 - leiningen
 - boot
-
+- timeshift
 @TODO: write a little script that updates dotfiles automatically

@@ -32,9 +32,6 @@ Plug 'junegunn/fzf.vim'
 " json helper for vim
 Plug 'elzr/vim-json'
 
-" multiple cursors
-"Plug 'terryma/vim-multiple-cursors'
-
 " snippets
 " Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'

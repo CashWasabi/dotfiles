@@ -53,6 +53,9 @@ Plug 'vim-airline/vim-airline-themes'
 " test dispatcher
 Plug 'tpope/vim-dispatch'
 
+" C# specific
+Plug 'OmniSharp/omnisharp-vim'
+
 " clojure specific
 Plug 'tpope/vim-classpath', { 'for': 'clojure' }
 Plug 'tpope/repeat.git', { 'for': 'clojure' }

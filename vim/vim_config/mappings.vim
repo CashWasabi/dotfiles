@@ -47,8 +47,18 @@ nnoremap <C-c> "+y
 nnoremap <leader>+ :so ~/.vimrc<Enter>
 nnoremap <leader>p :PlugInstall<Enter>
 
-" use jj as alternative to escape
-inoremap jj <Esc>
+" use jk as alternative to escape
+inoremap jk <Esc>
+
+" source: https://vim.fandom.com/wiki/Swapping_characters,_words_and_lines
+" Moves lines
+nnoremap <M-j> :move +1<CR>
+nnoremap <M-k> :move -2<CR>
+vnoremap <M-j> :m '>+1<CR>gv=gv
+vnoremap <M-k> :m '<-2<CR>gv=gv
+
+" swap words
+
 
 " CHEATSHEET:
 " zz - move current line to middle of screen

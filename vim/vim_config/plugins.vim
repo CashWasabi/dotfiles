@@ -1,6 +1,6 @@
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
@@ -32,9 +32,12 @@ Plug 'junegunn/fzf.vim'
 " json helper for vim
 Plug 'elzr/vim-json'
 
+" Autocompletion
+"Plug 'prabirshrestha/asyncomplete.vim'
+
 " snippets
-" Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 
 " Colors
 Plug 'rakr/vim-togglebg' " plugin to change color on key call
@@ -70,7 +73,6 @@ Plug 'fbeline/kibit-vim', { 'for': 'clojure' }
 Plug 'tmhedberg/SimpylFold', { 'for': 'python' }
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 Plug 'plytophogy/vim-virtualenv', { 'for': 'python' }
-Plug 'PieterjanMontens/vim-pipenv', { 'for': 'python' }
 
 " Dependencies for vim-lsp-python
 Plug 'prabirshrestha/async.vim', { 'for': 'python' }
@@ -79,14 +81,10 @@ Plug 'ryanolsonx/vim-lsp-python', { 'for': 'python' }
 
 "html/markdown
 Plug 'mattn/emmet-vim'
-Plug 'jtratner/vim-flavored-markdown'
-Plug 'suan/vim-instant-markdown'
-Plug 'nelstrom/vim-markdown-preview'
 
 " costum stuff
 Plug 'jiangmiao/auto-pairs'
 Plug 'easymotion/vim-easymotion'
-Plug 'wesQ3/vim-windowswap'
 
 " Initialize plugin system
 call plug#end()

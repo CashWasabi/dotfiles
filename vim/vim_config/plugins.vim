@@ -16,6 +16,7 @@ Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'justinmk/vim-dirvish'
 
 " git integration
 Plug 'rickhowe/diffchar.vim'

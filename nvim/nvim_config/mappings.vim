@@ -1,9 +1,28 @@
-source $HOME/git/dotfiles/vim/vim_config/features/close_inactive_buffers.vim
-
 let mapleader = ","
 
+" telescope mappings
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" nvim tree mappings
+nnoremap <leader>nn <cmd>NvimTreeToggle<cr>
+nnoremap <leader>nb <cmd>NvimTreeFocus<cr>
+nnoremap <leader>nf <cmd>NvimTreeFindFiles<cr>
+nnoremap <leader>nc <cmd>NvimTreeCollapse<cr>
+
+" hop mappings
+nnoremap <leader>hh <cmd>HopAnywhere<cr>
+nnoremap <leader>hc <cmd>HopChar1<cr>
+nnoremap <leader>hcc <cmd>HopChar2<cr>
+nnoremap <leader>hl <cmd>HopLine<cr>
+nnoremap <leader>hls <cmd>HopLineStart<cr>
+nnoremap <leader>hv <cmd>HopVertical<cr>
+nnoremap <leader>hp <cmd>HopPattern<cr>
+nnoremap <leader>hw <cmd>HopWord<cr>
+
 "split navigations
-" is this still useful with nerdtree?
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -21,25 +40,6 @@ noremap <Down> <nop>
 noremap <Left> <nop>
 noremap <Right> <nop>
 
-" open nerdtree on toggle
-nnoremap <C-n> :NERDTreeToggle<CR>
-
-" switch between buffers with tab and shift-tab
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
-
-" list buffers
-nnoremap <leader>bb :buffers<Enter>
-
-" Close buffer but keep split
-nnoremap <Backspace> :bp\|bd #<Enter>
-
-" Close split but keep buffer
-nnoremap <leader><Backspace> <C-w>q<Enter>
-
-" Close all inactive buffers
-nnoremap <leader>ea :call DeleteInactiveBufs()<CR>
-
 " copy with yank command in visual mode
 nnoremap <C-c> "+y
 
@@ -56,9 +56,6 @@ nnoremap <M-j> :move +1<CR>
 nnoremap <M-k> :move -2<CR>
 vnoremap <M-j> :m '>+1<CR>gv=gv
 vnoremap <M-k> :m '<-2<CR>gv=gv
-
-" swap words
-
 
 " CHEATSHEET:
 " zz - move current line to middle of screen

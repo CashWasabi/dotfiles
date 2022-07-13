@@ -1,14 +1,20 @@
-Dependencies:
-- kitty
-- i3
+# Dotfiles
+
+## Description
+// TODO: Write description
+
+
+## Dependencies
+- Manjaro-Sway (operating system)
+- foot
+- sway
+- wayland
+- neofetch
+- rofi
+- nvim
+- gopass
+- lf
+- nm-connection-editor (nmtui can't handle all configs)
 - zsh
-- oh-my-zsh
-- antigen
-- powerline zsh
-- vim dein plugin manager
-- tmux
-- tpm
-- leiningen
-- boot
-- timeshift
-@TODO: write a little script that updates dotfiles automatically
+- mutt
+- mpd
